@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Dairy ACM," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="素数距离难度：2  题目现在给出你一些数，要求你写出一个程序，输出这些整数相邻最近的素数，并输出其相距长度。如果左右有等距离长度素数，则输出左侧的值及相应距离。如果输入的整数本身就是素数，则输出该素数本身，距离输出0 输入第一行给出测试数据组数N(0&amp;lt;N&amp;lt;=10000)接下来的N行每行有一个整数M(0&amp;lt;M&amp;lt;1000000) 输出每行输出两个整数 A B.其中A表示离相应">
+<meta name="keywords" content="Dairy ACM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="11.6 Acm 素数距离">
+<meta property="og:url" content="http://yoursite.com/2018/11/06/11.6/index.html">
 <meta property="og:site_name" content="Mark Jones’ Blog">
+<meta property="og:description" content="素数距离难度：2  题目现在给出你一些数，要求你写出一个程序，输出这些整数相邻最近的素数，并输出其相距长度。如果左右有等距离长度素数，则输出左侧的值及相应距离。如果输入的整数本身就是素数，则输出该素数本身，距离输出0 输入第一行给出测试数据组数N(0&amp;lt;N&amp;lt;=10000)接下来的N行每行有一个整数M(0&amp;lt;M&amp;lt;1000000) 输出每行输出两个整数 A B.其中A表示离相应">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-16T08:49:03.560Z">
+<meta property="og:updated_time" content="2018-11-06T13:44:57.213Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="11.6 Acm 素数距离">
+<meta name="twitter:description" content="素数距离难度：2  题目现在给出你一些数，要求你写出一个程序，输出这些整数相邻最近的素数，并输出其相距长度。如果左右有等距离长度素数，则输出左侧的值及相应距离。如果输入的整数本身就是素数，则输出该素数本身，距离输出0 输入第一行给出测试数据组数N(0&amp;lt;N&amp;lt;=10000)接下来的N行每行有一个整数M(0&amp;lt;M&amp;lt;1000000) 输出每行输出两个整数 A B.其中A表示离相应">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/06/11.6/"/>
 
 
 
 
 
-  <title>about | Mark Jones’ Blog</title>
+  <title>11.6 Acm 素数距离 | Mark Jones’ Blog</title>
   
 
 
@@ -257,33 +261,212 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/06/11.6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mark Jones">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/mj.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mark Jones’ Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">11.6 Acm 素数距离</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-06T16:14:17+08:00">
+                2018-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <hr>
+<hr>
+<h1 id="素数距离"><a href="#素数距离" class="headerlink" title="素数距离"></a>素数距离</h1><p>难度：2</p>
+<hr>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>现在给出你一些数，要求你写出一个程序，输出这些整数相邻最近的素数，并输出其相距长度。如果左右有等距离长度素数，则输出左侧的值及相应距离。<br>如果输入的整数本身就是素数，则输出该素数本身，距离输出0</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>第一行给出测试数据组数N(0&lt;N&lt;=10000)<br>接下来的N行每行有一个整数M(0&lt;M&lt;1000000)</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>每行输出两个整数 A B.<br>其中A表示离相应测试数据最近的素数，B表示其间的距离。</p>
+<h3 id="例如"><a href="#例如" class="headerlink" title="例如"></a>例如</h3><pre><code>2
+8
+7
+</code></pre><h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><pre><code>9 1
+7 0
+</code></pre><hr>
+<p><br><br><br></p>
+<h2 id="本人代码"><a href="#本人代码" class="headerlink" title="本人代码"></a>本人代码</h2><p>这题用的是C，但是我在AC这道题的时候，一直提醒我TLE，本来使用C++写的，改成C写还是会超时，我也很无奈，。但是可以运行，是一个解决方案。仅供参考吧，我后期再想想办法减小内存占用，如果有大神知道我这代码有什么问题的话，那就更好了。</p>
+<pre><code>#include &quot;stdio.h&quot;
+int judge(int c)
+{
+int i;
+for (i = 2; i &lt; c; i++)
+{
+    if (c%i == 0)
+        return 0;
+}
+
+return 1;
+
+}
+void find(int d)
+{
+int j;
+
+if (judge(d)==1)
+{ printf(&quot;%d 0&quot;,d); }
+
+else
+for (j= 1;;j++)
+{
+    if   (judge(d - j)==1)
+    {    printf(&quot;%d %d&quot;,d-j,j);break; }
+
+    else if (judge(d + j)==1)
+    {    printf(&quot;%d %d&quot;,d+j,j);break; }
+
+}
+}
+
+int main()
+{
+int n, q;
+scanf(&quot;%d&quot;,&amp;n);
+
+while (n--)
+{
+
+scanf(&quot;%d&quot;,&amp;q);
+    find(q);
+}
+
+return 0;
+
+}
+</code></pre><p><br><br><br><br><br><br></p>
+<p>Mark Jones</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Dairy-ACM/" rel="tag"># Dairy ACM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/05/11.5/" rel="next" title="11.5 Acm ASCII码排序">
+                <i class="fa fa-chevron-left"></i> 11.5 Acm ASCII码排序
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -323,8 +506,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -401,6 +593,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#素数距离"><span class="nav-number">1.</span> <span class="nav-text">素数距离</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目"><span class="nav-number">1.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入"><span class="nav-number">1.0.2.</span> <span class="nav-text">输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出"><span class="nav-number">1.0.3.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例如"><span class="nav-number">1.0.4.</span> <span class="nav-text">例如</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出-1"><span class="nav-number">1.0.5.</span> <span class="nav-text">输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本人代码"><span class="nav-number">1.1.</span> <span class="nav-text">本人代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
