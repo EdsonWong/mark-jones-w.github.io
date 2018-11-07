@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Dairy ACM," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="素数求和难度：2  题目现在给你N个数（0&amp;lt;N&amp;lt;1000），现在要求你写出一个程序，找出这N个数中的所有素数，并求和。 输入第一行给出整数M(0&amp;lt;M&amp;lt;10)代表多少组测试数据每组测试数据第一行给你N，代表该组测试数据的数量。接下来的N个数为要测试的数据，每个数小于1000 输出每组测试数据结果占一行，输出给出的测试数据的所有素数和 例如3 5 1 2 3 4 5 8 1">
+<meta name="keywords" content="Dairy ACM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="11.7 Acm 素数求和">
+<meta property="og:url" content="http://yoursite.com/2018/11/07/11.7/index.html">
 <meta property="og:site_name" content="Mark Jones’ Blog">
+<meta property="og:description" content="素数求和难度：2  题目现在给你N个数（0&amp;lt;N&amp;lt;1000），现在要求你写出一个程序，找出这N个数中的所有素数，并求和。 输入第一行给出整数M(0&amp;lt;M&amp;lt;10)代表多少组测试数据每组测试数据第一行给你N，代表该组测试数据的数量。接下来的N个数为要测试的数据，每个数小于1000 输出每组测试数据结果占一行，输出给出的测试数据的所有素数和 例如3 5 1 2 3 4 5 8 1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-16T08:49:03.560Z">
+<meta property="og:updated_time" content="2018-11-07T13:54:34.445Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="11.7 Acm 素数求和">
+<meta name="twitter:description" content="素数求和难度：2  题目现在给你N个数（0&amp;lt;N&amp;lt;1000），现在要求你写出一个程序，找出这N个数中的所有素数，并求和。 输入第一行给出整数M(0&amp;lt;M&amp;lt;10)代表多少组测试数据每组测试数据第一行给你N，代表该组测试数据的数量。接下来的N个数为要测试的数据，每个数小于1000 输出每组测试数据结果占一行，输出给出的测试数据的所有素数和 例如3 5 1 2 3 4 5 8 1">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/07/11.7/"/>
 
 
 
 
 
-  <title>about | Mark Jones’ Blog</title>
+  <title>11.7 Acm 素数求和 | Mark Jones’ Blog</title>
   
 
 
@@ -257,33 +261,210 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/07/11.7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mark Jones">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/mj.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mark Jones’ Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">11.7 Acm 素数求和</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-07T20:59:14+08:00">
+                2018-11-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <hr>
+<hr>
+<h1 id="素数求和"><a href="#素数求和" class="headerlink" title="素数求和"></a>素数求和</h1><p>难度：2</p>
+<hr>
+<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>现在给你N个数（0&lt;N&lt;1000），现在要求你写出一个程序，找出这N个数中的所有素数，并求和。</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>第一行给出整数M(0&lt;M&lt;10)代表多少组测试数据<br>每组测试数据第一行给你N，代表该组测试数据的数量。<br>接下来的N个数为要测试的数据，每个数小于1000</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>每组测试数据结果占一行，输出给出的测试数据的所有素数和</p>
+<h3 id="例如"><a href="#例如" class="headerlink" title="例如"></a>例如</h3><pre><code>3
+5
+1 2 3 4 5
+8
+11 12 13 14 15 16 17 18
+10
+21 22 23 24 25 26 27 28 29 30
+</code></pre><h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><pre><code>10
+41
+52
+</code></pre><hr>
+<p><br><br><br></p>
+<h2 id="本人代码"><a href="#本人代码" class="headerlink" title="本人代码"></a>本人代码</h2><p>很自然的想到了数组的使用，因为不确定到底会输入多少数据，所以需要动态存储了。c++确实很实用！学好C更为关键。几天的AC下来，明显的感觉自己的思路一下就清晰了。坚持！</p>
+<pre><code>#include &quot;iostream&quot;
+using namespace std;
+
+int judge(int x)
+{    
+
+for(int i =2;i&lt;x;i++)
+    {
+    if(x%i==0)
+    return 0; 
+    }
+    return 1;
+}
+
+int main()
+{
+    int n;
+    cin&gt;&gt;n;
+
+while(n--)
+{
+    int q,i,sum=0;
+    cin&gt;&gt;q;
+    int a[q];
+    for(i=0;i&lt;q;i++)
+    {
+        cin&gt;&gt;a[i];
+
+    if(a[i]&gt;1)
+        {
+            if(judge(a[i])==1)
+            sum=sum+a[i];
+        }
+    continue;
+    }
+    cout&lt;&lt;sum&lt;&lt;endl;
+}
+
+return 0;
+} 
+</code></pre><p><br><br><br><br><br><br></p>
+<p>Mark Jones</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Dairy-ACM/" rel="tag"># Dairy ACM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/06/11.6/" rel="next" title="11.6 Acm 素数距离">
+                <i class="fa fa-chevron-left"></i> 11.6 Acm 素数距离
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -323,8 +504,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -401,6 +591,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#素数求和"><span class="nav-number">1.</span> <span class="nav-text">素数求和</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目"><span class="nav-number">1.0.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入"><span class="nav-number">1.0.2.</span> <span class="nav-text">输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出"><span class="nav-number">1.0.3.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例如"><span class="nav-number">1.0.4.</span> <span class="nav-text">例如</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出-1"><span class="nav-number">1.0.5.</span> <span class="nav-text">输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本人代码"><span class="nav-number">1.1.</span> <span class="nav-text">本人代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
