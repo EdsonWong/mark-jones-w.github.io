@@ -2,15 +2,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
 
 
 
@@ -38,10 +54,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -50,45 +62,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next2.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next2.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next2.png?v=6.5.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next2.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next2.png?v=6.5.0">
 
 
-  <link rel="mask-icon" href="/images/logo2.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="We satifsy our endless needs And justify our bloody deeds In the name of destiny And the name of God you can see them there On Sunday morning Stand up and sing about What it s like up there They call">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mark Jones’ Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Mark Jones’ Blog">
-<meta property="og:description" content="We satifsy our endless needs And justify our bloody deeds In the name of destiny And the name of God you can see them there On Sunday morning Stand up and sing about What it s like up there They call">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mark Jones’ Blog">
-<meta name="twitter:description" content="We satifsy our endless needs And justify our bloody deeds In the name of destiny And the name of God you can see them there On Sunday morning Stand up and sing about What it s like up there They call">
 
 
 
@@ -97,15 +89,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":20,"b2t":true,"scrollpercent":false,"onmobile":true},
-    fancybox: true,
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -117,12 +107,36 @@
 </script>
 
 
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
+  
 
 
 
+
+  <meta name="description" content="We satifsy our endless needs And justify our bloody deeds In the name of destiny And the name of God you can see them there On Sunday morning Stand up and sing about What it s like up there They call">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mark Jones’ Blog">
+<meta property="og:url" content="http://www.markjones.top/index.html">
+<meta property="og:site_name" content="Mark Jones’ Blog">
+<meta property="og:description" content="We satifsy our endless needs And justify our bloody deeds In the name of destiny And the name of God you can see them there On Sunday morning Stand up and sing about What it s like up there They call">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mark Jones’ Blog">
+<meta name="twitter:description" content="We satifsy our endless needs And justify our bloody deeds In the name of destiny And the name of God you can see them there On Sunday morning Stand up and sing about What it s like up there They call">
+
+
+
+
+
+
+  <link rel="canonical" href="http://www.markjones.top/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Mark Jones’ Blog</title>
   
@@ -134,9 +148,39 @@
 
 
 
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -153,19 +197,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Mark Jones’ Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">一个倔强而又无趣的灵魂</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -173,88 +219,158 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-music">
-          <a href="/music.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-music"></i> <br />
-            
-            云音乐
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home menu-item-active">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-music">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/music.html" rel="section"><i class="menu-item-icon fa fa-fw fa-music"></i> <br />music</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
       
     </ul>
   
 
   
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
 </nav>
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -267,16 +383,18 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/07/11.7/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/11/07/11.7.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -291,11 +409,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/07/11.7/" itemprop="url">11.7 Acm 素数求和</a></h1>
+                
+                <a href="/2018/11/07/11.7.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">11.7 Acm 素数求和</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -303,13 +430,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-07T20:59:14+08:00">
-                2018-11-07
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-07 20:59:14" itemprop="dateCreated datePublished" datetime="2018-11-07T20:59:14+08:00">2018-11-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -324,6 +468,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">856</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -351,21 +523,29 @@
 输入第一行给出整数M(0&lt;M&lt;10)代表多少组测试数
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/07/11.7/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/07/11.7.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -398,16 +578,18 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/06/11.6/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/11/06/11.6.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -422,11 +604,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/06/11.6/" itemprop="url">11.6 Acm 素数距离</a></h1>
+                
+                <a href="/2018/11/06/11.6.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">11.6 Acm 素数距离</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -434,13 +625,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-06T16:14:17+08:00">
-                2018-11-06
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-06 16:14:17" itemprop="dateCreated datePublished" datetime="2018-11-06T16:14:17+08:00">2018-11-06</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -455,6 +663,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">902</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -481,21 +717,29 @@
 题目现在给出你一些数，要求你写出一个程序，输出这些整数相邻最近的素数，并输出其相距长度。如果左右有等距离长度素数，则输出左侧的值及相应距离。如果输入的整数本身就是素数，则输出该
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/06/11.6/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/06/11.6.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -528,16 +772,18 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/05/11.5/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/11/05/11.5.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -552,11 +798,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/05/11.5/" itemprop="url">11.5 Acm ASCII码排序</a></h1>
+                
+                <a href="/2018/11/05/11.5.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">11.5 Acm ASCII码排序</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -564,13 +819,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-05T14:18:55+08:00">
-                2018-11-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-05 14:18:55" itemprop="dateCreated datePublished" datetime="2018-11-05T14:18:55+08:00">2018-11-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -585,6 +857,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">968</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -612,21 +912,29 @@ ASCII码排序难度：2
 输入第一行输入一个数N,表示有N组测试数据。后面的N行输入多组数据，每组输入数据都
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/05/11.5/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/05/11.5.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -659,16 +967,18 @@ ASCII码排序难度：2
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/17/关于奖助学金评奖评优/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/09/17/关于奖助学金评奖评优.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -683,11 +993,20 @@ ASCII码排序难度：2
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/17/关于奖助学金评奖评优/" itemprop="url">奖助学金评奖评优那些事儿</a></h1>
+                
+                <a href="/2018/09/17/关于奖助学金评奖评优.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">奖助学金评奖评优那些事儿</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -695,13 +1014,30 @@ ASCII码排序难度：2
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-17T22:50:24+08:00">
-                2018-09-17
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-17 22:50:24" itemprop="dateCreated datePublished" datetime="2018-09-17T22:50:24+08:00">2018-09-17</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -716,6 +1052,34 @@ ASCII码排序难度：2
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">5 分钟</span>
+              
+            </div>
           
 
           
@@ -736,7 +1100,7 @@ ASCII码排序难度：2
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/tcqs1.png" rel="gallery_cjo786ip9000p84qfhdee5xsw"
+                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/tcqs1.png" rel="gallery_cjoa6q59c000c9kqfmfedpp2h"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/tcqs1.png" itemprop="contentUrl"/>
               </a>
@@ -759,21 +1123,29 @@ ASCII码排序难度：2
 大学四年，如果没能交上几个可以拼命的朋友，没有一段值得一生回忆的爱情，没有感知青春的灿烂，而是只为了那区区奖学金、助学金、学生干部、荣誉证书、入党名额而变得小心翼翼、谄媚
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/17/关于奖助学金评奖评优/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/17/关于奖助学金评奖评优.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -806,16 +1178,18 @@ ASCII码排序难度：2
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/14/务必远离两种人/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/09/14/务必远离两种人.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -830,11 +1204,20 @@ ASCII码排序难度：2
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/14/务必远离两种人/" itemprop="url">务必远离两种人</a></h1>
+                
+                <a href="/2018/09/14/务必远离两种人.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">务必远离两种人</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -842,13 +1225,30 @@ ASCII码排序难度：2
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-14T15:29:52+08:00">
-                2018-09-14
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-14 15:29:52" itemprop="dateCreated datePublished" datetime="2018-09-14T15:29:52+08:00">2018-09-14</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -863,6 +1263,34 @@ ASCII码排序难度：2
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
+              
+            </div>
           
 
           
@@ -883,7 +1311,7 @@ ASCII码排序难度：2
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/stayaway.jpg" rel="gallery_cjo786ip7000o84qf8vrodmdt"
+                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/stayaway.jpg" rel="gallery_cjoa6q59d000d9kqf2terrxqt"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/stayaway.jpg" itemprop="contentUrl"/>
               </a>
@@ -905,21 +1333,29 @@ ASCII码排序难度：2
 这篇文章正文部分来自WeChat，本人于本学期9.1晚在校所读，觉得有必要分享一下。作者WeChat ID:stormzhang，发布于公众号：我就BB怎么了。每篇推文末尾都有评
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/14/务必远离两种人/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/14/务必远离两种人.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -952,16 +1388,18 @@ ASCII码排序难度：2
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/05/Netbug Solutiont/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/09/05/Netbug Solutiont.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -976,11 +1414,20 @@ ASCII码排序难度：2
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/05/Netbug Solutiont/" itemprop="url">常见宽带错误以及解决办法</a></h1>
+                
+                <a href="/2018/09/05/Netbug Solutiont.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">常见宽带错误以及解决办法</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -988,13 +1435,30 @@ ASCII码排序难度：2
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T18:59:52+08:00">
-                2018-09-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-05 18:59:52" itemprop="dateCreated datePublished" datetime="2018-09-05T18:59:52+08:00">2018-09-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -1009,6 +1473,34 @@ ASCII码排序难度：2
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -1029,7 +1521,7 @@ ASCII码排序难度：2
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/404.JPG" rel="gallery_cjo786ijh000c84qfg1yhkhwm"
+                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/404.JPG" rel="gallery_cjoa6q59600059kqfdsmt9z7g"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/404.JPG" itemprop="contentUrl"/>
               </a>
@@ -1051,21 +1543,29 @@ ASCII码排序难度：2
 本文主要针对对于网络配置方面知识薄弱的新生朋友们，无意点到这篇文章的高玩们可以直接选择右上角的那个小红叉，点击一下，画面就会神奇的和谐了。现本人Blog已开通在线评论功
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/05/Netbug Solutiont/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/05/Netbug Solutiont.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -1098,16 +1598,18 @@ ASCII码排序难度：2
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/05/PCset/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/09/05/PCset.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -1122,11 +1624,20 @@ ASCII码排序难度：2
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/05/PCset/" itemprop="url">电脑拨号的设置</a></h1>
+                
+                <a href="/2018/09/05/PCset.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">电脑拨号的设置</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1134,13 +1645,30 @@ ASCII码排序难度：2
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T14:20:42+08:00">
-                2018-09-05
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-05 14:20:42" itemprop="dateCreated datePublished" datetime="2018-09-05T14:20:42+08:00">2018-09-05</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -1155,6 +1683,34 @@ ASCII码排序难度：2
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -1175,7 +1731,7 @@ ASCII码排序难度：2
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/pcset.JPG" rel="gallery_cjo786ijd000a84qfvxkkqi2c"
+                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/pcset.JPG" rel="gallery_cjoa6q59400049kqftaxwhp7z"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/pcset.JPG" itemprop="contentUrl"/>
               </a>
@@ -1198,21 +1754,29 @@ ASCII码排序难度：2
 现本人Blog已开通在线评论功能，评论
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/05/PCset/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/05/PCset.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -1245,16 +1809,18 @@ ASCII码排序难度：2
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/04/routerset/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/09/04/routerset.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -1269,11 +1835,20 @@ ASCII码排序难度：2
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/04/routerset/" itemprop="url">路由器的设置</a></h1>
+                
+                <a href="/2018/09/04/routerset.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">路由器的设置</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1281,13 +1856,30 @@ ASCII码排序难度：2
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-04T23:20:52+08:00">
-                2018-09-04
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-04 23:20:52" itemprop="dateCreated datePublished" datetime="2018-09-04T23:20:52+08:00">2018-09-04</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -1302,6 +1894,34 @@ ASCII码排序难度：2
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -1322,7 +1942,7 @@ ASCII码排序难度：2
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/routerset.GIF" rel="gallery_cjo786ijk000f84qfuczgo9z7"
+                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/routerset.GIF" rel="gallery_cjoa6q59b00099kqfzq37vg4h"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/networkset/routerset.GIF" itemprop="contentUrl"/>
               </a>
@@ -1345,21 +1965,29 @@ ASCII码排序难度：2
 现本人Blog已开通在线评论功能，评论区
           ...
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/04/routerset/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/04/routerset.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -1392,16 +2020,18 @@ ASCII码排序难度：2
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/Hello World/">
+    <link itemprop="mainEntityOfPage" href="http://www.markjones.top/2018/05/02/Hello World.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mark Jones">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.">
       <meta itemprop="image" content="/uploads/mj.JPG">
     </span>
 
@@ -1416,11 +2046,20 @@ ASCII码排序难度：2
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/02/Hello World/" itemprop="url">Hello World</a></h1>
+                
+                <a href="/2018/05/02/Hello World.html/" class="post-title-link" itemprop="http://www.markjones.top/index.html">Hello World</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1428,13 +2067,30 @@ ASCII码排序难度：2
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T02:01:57+08:00">
-                2018-05-02
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-02 02:01:57" itemprop="dateCreated datePublished" datetime="2018-05-02T02:01:57+08:00">2018-05-02</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-09 10:58:07" itemprop="dateModified" datetime="2018-11-09T10:58:07+08:00">2018-11-09</time>
+              
             
           </span>
 
@@ -1449,6 +2105,34 @@ ASCII码排序难度：2
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">49</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
           
 
           
@@ -1471,21 +2155,29 @@ ASCII码排序难度：2
           Hello World.Thanks for watching !To be continued…
           
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/02/Hello World/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/05/02/Hello World.html/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+       
+    
     
 
     
@@ -1516,9 +2208,6 @@ ASCII码排序难度：2
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -1555,66 +2244,97 @@ ASCII码排序难度：2
               <p class="site-description motion-element" itemprop="description">We satifsy our endless needs <br />And justify our bloody deeds <br />In the name of destiny <br />And the name of God <br />you can see them there <br />On Sunday morning <br />Stand up and sing about <br />What it s like up there <br />They call it paradise <br />I don t know why <br />You call someplace paradise <br /> Kiss it goodbye.</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/">
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">9</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
-
-            
               
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
 
-          </nav>
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="http://qm.qq.com/cgi-bin/qm/qr?k=ZA0Pii3xFBiDo5q6AGPy0LZV0P0vSZeH#" target="_blank" title="QQ">
-                      
-                        <i class="fa fa-fw fa-qq"></i>QQ</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:marj_jones.w@qq.com@qq.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://instagram.com/mark_jones.w" target="_blank" title="Instagram">
-                      
-                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://qm.qq.com/cgi-bin/qm/qr?k=ZA0Pii3xFBiDo5q6AGPy0LZV0P0vSZeH#" title="QQ &rarr; http://qm.qq.com/cgi-bin/qm/qr?k=ZA0Pii3xFBiDo5q6AGPy0LZV0P0vSZeH#" rel="noopener" target="_blank"><i class="fa fa-fw fa-qq"></i>QQ</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:marj_jones.w@qq.com@qq.com" title="E-Mail &rarr; mailto:marj_jones.w@qq.com@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://instagram.com/yourname" title="Instagram &rarr; https://instagram.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                </span>
+              
             </div>
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
@@ -1622,11 +2342,6 @@ ASCII码排序难度：2
 
       
 
-      
-        <div class="back-to-top">
-          <i class="fa fa-arrow-up"></i>
-          
-        </div>
       
 
     </div>
@@ -1640,50 +2355,39 @@ ASCII码排序难度：2
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-heart user"></i>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Mark Jones</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">15k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">14 分钟</span>
+  
 </div>
 
- 
-  <div class="powered-by"> 林深时见鹿</div> 
 
 
 
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">梦醒时见你 </div> 
 
 
 
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
-    </span>
-  
-</div>
 
 
 
@@ -1697,9 +2401,48 @@ ASCII码排序难度：2
     </footer>
 
     
-
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
     
 
+    
+	
+    
+      <div>
+        
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "1",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      },
+      "slide": {
+        "bdImg": "5",
+        "bdPos": "left",
+        "bdTop": "100"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      </div>
+    
+
+    
   </div>
 
   
@@ -1718,17 +2461,22 @@ ASCII码排序难度：2
 
 
 
-  
-
-
-  
 
 
 
 
 
   
+    
+      
   
+  <script type="text/javascript" color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
 
 
 
@@ -1743,16 +2491,6 @@ ASCII码排序难度：2
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -1761,33 +2499,13 @@ ASCII码排序难度：2
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/three.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
 
 
 
@@ -1799,27 +2517,11 @@ ASCII码排序难度：2
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
 
 
 
   
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
 
 
 
@@ -1834,13 +2536,335 @@ ASCII码排序难度：2
 
 
 
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
 
 
   
 
-
-
-
+  
 
   
 
@@ -1850,10 +2874,94 @@ ASCII码排序难度：2
 
   
   
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+  </script>
 
   
 
   
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
 
   
 
