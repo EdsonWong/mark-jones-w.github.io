@@ -461,6 +461,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/14/务必远离两种人.html/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/09/14/务必远离两种人.html/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -516,7 +526,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/stayaway.jpg" rel="gallery_cjob0mojy000iz8qf9setbyba"
+                 href="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/stayaway.jpg" rel="gallery_cjob2gnbf000euwqflpels3yb"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/%E5%A5%96%E5%8A%A9%E5%AD%A6%E9%87%91%E9%82%A3%E4%BA%9B%E4%BA%8B/stayaway.jpg" itemprop="contentUrl"/>
               </a>
@@ -638,6 +648,9 @@
           </div>
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -927,7 +940,7 @@
     
       
   
-  <script type="text/javascript" color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script type="text/javascript" color='0,0,255' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -994,6 +1007,31 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'cQ1fMiOlTMoXCAVFLDRvJjub-gzGzoHsz',
+        appKey: 'UuHG27SB4Johb9OjoHtwQtC4',
+        placeholder: '来都来了，留下您的评论吧~ 填写邮箱方便联系您，并且信息不会泄露。',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
 
 
 
@@ -1430,3 +1468,7 @@
 </html>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/love.js"></script>
+
+
+<script type="text/javascript"
+color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
