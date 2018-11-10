@@ -1910,7 +1910,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d414ff;
+  background: #25d2ac;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2735,8 +2735,7 @@ embed {
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 50% 50%;
-    background-size: cover;
+    background-size: contain;
   }
   #footer a {
     color: #eee;
