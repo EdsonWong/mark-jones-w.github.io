@@ -1910,7 +1910,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0aff46;
+  background: #36ace9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2729,6 +2729,9 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+#instantclick {
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   body {
