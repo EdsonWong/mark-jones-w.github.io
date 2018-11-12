@@ -1910,7 +1910,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #99d1ff;
+  background: #0aff46;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2732,7 +2732,7 @@ embed {
 }
 @media screen and (min-width: 1200px) {
   body {
-    background-image: url("/images/background.jpg");
+    background-image: url("https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
