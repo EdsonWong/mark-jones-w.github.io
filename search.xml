@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[11.14 Acm 蛇形填数]]></title>
+    <url>%2F2018%2F11%2F14%2F11.14.html%2F</url>
+    <content type="text"><![CDATA[蛇形输入难度：3 题目在nn方陈里填入1,2,…,nn,要求填成蛇形。例如n=4时方陈为： 10 11 12 19 16 13 28 15 14 37 6 5 4 输入直接输入方陈的维数，即n的值。(n&lt;=100) 输出输出结果是蛇形方陈。 例如3 输出7 8 1 6 9 2 5 4 3 本人代码好久没更新了，确实太忙了，这道题花了我太多时间，还是自己太菜了啊。。。还是那句话，方法不唯一。 #include&lt;stdio.h&gt; int main () { int n, a[100][100] = {0}, x = 0, c = 0，y; scanf(&quot;%d&quot;, &amp;n); y = n - 1; c = a[x][y] = 1; while (c &lt; n * n) { while (x + 1 &lt; n &amp;&amp; !a[x + 1][y]) //向下 a[++x][y] = ++c; while (y -1 &gt;= 0 &amp;&amp; !a[x][y - 1]) //向左 a[x][--y] = ++c; while (x - 1 &gt;= 0 &amp;&amp; !a[x - 1][y]) //向上 a[--x][y] = ++c; while (y + 1 &lt; n &amp;&amp; !a[x][y + 1]) //向右 a[x][++y] = ++c; } for (int i = 0; i &lt; n; i++) { for (int j = 0; j &lt; n; j++) { printf(&quot;%d &quot;,a[i][j]); } printf(&quot;\n&quot;); } } Mark Jones]]></content>
+      <categories>
+        <category>ACM试题</category>
+      </categories>
+      <tags>
+        <tag>Dairy ACM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[11.7 Acm 素数求和]]></title>
     <url>%2F2018%2F11%2F07%2F11.7.html%2F</url>
     <content type="text"><![CDATA[素数求和难度：2 题目现在给你N个数（0&lt;N&lt;1000），现在要求你写出一个程序，找出这N个数中的所有素数，并求和。 输入第一行给出整数M(0&lt;M&lt;10)代表多少组测试数据每组测试数据第一行给你N，代表该组测试数据的数量。接下来的N个数为要测试的数据，每个数小于1000 输出每组测试数据结果占一行，输出给出的测试数据的所有素数和 例如3 5 1 2 3 4 5 8 11 12 13 14 15 16 17 18 10 21 22 23 24 25 26 27 28 29 30 输出10 41 52 本人代码很自然的想到了数组的使用，因为不确定到底会输入多少数据，所以需要动态存储了。c++确实很实用！学好C更为关键。几天的AC下来，明显的感觉自己的思路一下就清晰了。坚持！ #include &quot;iostream&quot; using namespace std; int judge(int x) { for(int i =2;i&lt;x;i++) { if(x%i==0) return 0; } return 1; } int main() { int n; cin&gt;&gt;n; while(n--) { int q,i,sum=0; cin&gt;&gt;q; int a[q]; for(i=0;i&lt;q;i++) { cin&gt;&gt;a[i]; if(a[i]&gt;1) { if(judge(a[i])==1) sum=sum+a[i]; } continue; } cout&lt;&lt;sum&lt;&lt;endl; } return 0; } Mark Jones]]></content>
@@ -14,7 +25,7 @@
   <entry>
     <title><![CDATA[11.6 Acm 素数距离]]></title>
     <url>%2F2018%2F11%2F06%2F11.6.html%2F</url>
-    <content type="text"><![CDATA[素数距离难度：2 题目现在给出你一些数，要求你写出一个程序，输出这些整数相邻最近的素数，并输出其相距长度。如果左右有等距离长度素数，则输出左侧的值及相应距离。如果输入的整数本身就是素数，则输出该素数本身，距离输出0 输入第一行给出测试数据组数N(0&lt;N&lt;=10000)接下来的N行每行有一个整数M(0&lt;M&lt;1000000) 输出每行输出两个整数 A B.其中A表示离相应测试数据最近的素数，B表示其间的距离。 例如2 8 7 输出9 1 7 0 本人代码这题用的是C，但是我在AC这道题的时候，一直提醒我TLE，本来使用C++写的，改成C写还是会超时，我也很无奈，。但是可以运行，是一个解决方案。仅供参考吧，我后期再想想办法减小内存占用，如果有大神知道我这代码有什么问题的话，那就更好了。 #include &quot;stdio.h&quot; int judge(int c) { int i; for (i = 2; i &lt; c; i++) { if (c%i == 0) return 0; } return 1; } void find(int d) { int j; if (judge(d)==1) { printf(&quot;%d 0&quot;,d); } else for (j= 1;;j++) { if (judge(d - j)==1) { printf(&quot;%d %d&quot;,d-j,j);break; } else if (judge(d + j)==1) { printf(&quot;%d %d&quot;,d+j,j);break; } } } int main() { int n, q; scanf(&quot;%d&quot;,&amp;n); while (n--) { scanf(&quot;%d&quot;,&amp;q); find(q); } return 0; } Mark Jones]]></content>
+    <content type="text"><![CDATA[素数距离难度：3 题目现在给出你一些数，要求你写出一个程序，输出这些整数相邻最近的素数，并输出其相距长度。如果左右有等距离长度素数，则输出左侧的值及相应距离。如果输入的整数本身就是素数，则输出该素数本身，距离输出0 输入第一行给出测试数据组数N(0&lt;N&lt;=10000)接下来的N行每行有一个整数M(0&lt;M&lt;1000000) 输出每行输出两个整数 A B.其中A表示离相应测试数据最近的素数，B表示其间的距离。 例如2 8 7 输出9 1 7 0 本人代码这题用的是C，但是我在AC这道题的时候，一直提醒我TLE，本来使用C++写的，改成C写还是会超时，我也很无奈，。但是可以运行，是一个解决方案。仅供参考吧，我后期再想想办法减小内存占用，如果有大神知道我这代码有什么问题的话，那就更好了。 #include &quot;stdio.h&quot; int judge(int c) { int i; for (i = 2; i &lt; c; i++) { if (c%i == 0) return 0; } return 1; } void find(int d) { int j; if (judge(d)==1) { printf(&quot;%d 0&quot;,d); } else for (j= 1;;j++) { if (judge(d - j)==1) { printf(&quot;%d %d&quot;,d-j,j);break; } else if (judge(d + j)==1) { printf(&quot;%d %d&quot;,d+j,j);break; } } } int main() { int n, q; scanf(&quot;%d&quot;,&amp;n); while (n--) { scanf(&quot;%d&quot;,&amp;q); find(q); } return 0; } Mark Jones]]></content>
       <categories>
         <category>ACM试题</category>
       </categories>
