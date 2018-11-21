@@ -2053,7 +2053,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #96ffac;
+  background: #c8fb3c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2882,15 +2882,11 @@ embed {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 50%;
-  }
-  #footer a {
-    color: #fff;
+    background-position: center center;
   }
 }
-a,
-span.exturl {
-  color: #8b8b7a;
+.container .header-inner {
+  width: 100%;
 }
 .page-post-detail .sidebar-toggle-line {
   background: #fff;
@@ -2932,8 +2928,32 @@ span.exturl {
   text-align: center;
 }
 .headband {
-  height: 19px;
+  height: 0px;
   background: none;
+}
+.header-inner {
+  margin: 0 auto;
+  padding: 100px 0 70px;
+  width: 100%;
+}
+.site-nav {
+  top: initial;
+  background-color: rgba(255,255,255,0.75);
+  border-top: none;
+  border-bottom: none;
+  position: relative;
+  z-index: 1024;
+}
+.site-meta {
+  background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
+}
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5px;
+  background-color: rgba(70,130,180,0.75);
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  text-align: center;
 }
 .back-to-top {
   box-sizing: border-box;
@@ -2962,15 +2982,6 @@ span.exturl {
   color: #fff;
   background: none;
   border-bottom: none;
-}
-.menu-item-active a,
-.menu .menu-item a:hover,
-.menu .menu-item span.exturl:hover {
-  color: #fff;
-}
-menu .menu-item a,
-.menu .menu-item span.exturl {
-  border-bottom: 2px solid #fff;
 }
 .site-subtitle {
   margin-top: 20px;
@@ -3033,6 +3044,26 @@ menu .menu-item a,
   transition: all 0.35s ease-in-out;
   z-index: 1024;
   opacity: 0;
+}
+.backstretch {
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  z-index: -999999;
+  position: fixed;
+  background-image: "https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/background2.jpg";
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  max-width: none;
+  z-index: -999999;
+  left: 0px;
 }
 .weixin-menu:hover .weixin-hover {
   bottom: 24px;
