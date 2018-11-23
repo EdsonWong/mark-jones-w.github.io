@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Sunflower]]></title>
     <url>%2F2018%2F11%2F23%2Fsunflower.html%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":true,"video":{"url":"https://vodkgeyttp8.vod.126.net/vodkgeyttp8/RDiJslEb_28344834_shd.mp4?wsSecret=0977410d6199e7f30c68726065eb7e5e&wsTime=1542941356"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() Mar Jones]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":true,"video":{"url":"https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/video/sunflower.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() https://vodkgeyttp8c.vod.126.net/vodkgeyttp8/RDiJslEb_28344834_shd.mp4?wsSecret=2dd4f37982dc46002ca8f0a39401f66a&amp;wsTime=1542976331 Mar Jones]]></content>
       <categories>
         <category>Life</category>
       </categories>
@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[无题]]></title>
     <url>%2F2018%2F11%2F22%2F%E6%97%A0%E9%A2%98.html%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"loop":true,"video":{"url":"https://vodkgeyttp8.vod.126.net/vodkgeyttp8/TC6rd2oB_28345397_shd.mp4?wsSecret=7abbf6e9cd5b1ac452573aff8563e0f0&wsTime=1542942592"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() Mar Jones]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"loop":true,"video":{"url":"https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/video/%E6%97%A0%E9%A2%98.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() Mar Jones]]></content>
       <categories>
         <category>Life</category>
       </categories>
