@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Sunflower]]></title>
+    <url>%2F2018%2F11%2F23%2Fsunflower.html%2F</url>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":true,"video":{"url":"https://vodkgeyttp8.vod.126.net/vodkgeyttp8/RDiJslEb_28344834_shd.mp4?wsSecret=0977410d6199e7f30c68726065eb7e5e&wsTime=1542941356"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() Mar Jones]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Music</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[无题]]></title>
     <url>%2F2018%2F11%2F22%2F%E6%97%A0%E9%A2%98.html%2F</url>
-    <content type="text"><![CDATA[Your browser does not support the video tag. Mar Jones]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"loop":true,"video":{"url":"https://vodkgeyttp8.vod.126.net/vodkgeyttp8/TC6rd2oB_28345397_shd.mp4?wsSecret=7abbf6e9cd5b1ac452573aff8563e0f0&wsTime=1542942592"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() Mar Jones]]></content>
       <categories>
         <category>Life</category>
       </categories>
