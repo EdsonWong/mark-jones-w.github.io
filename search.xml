@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[11.27 Acm 求转置矩阵问题]]></title>
+    <url>%2F2018%2F11%2F27%2F11.27.html%2F</url>
+    <content type="text"><![CDATA[转置矩阵难度：2 题目求一个三行三列的转置矩阵。 输入第一行一个整数n&lt;20，表示有n组测试数据，下面是n组数据;每组测试数据是九个整型数（每个数都不大于10000），分别为矩阵的的每项； 输出每组测试数据的转置矩阵；请在每组输出之后加一个换行 例如2 1 2 3 4 5 6 7 8 9 2 3 4 5 6 7 8 9 1 输出1 4 7 2 5 8 3 6 9 2 5 8 3 6 9 4 7 1 本人代码转置矩阵根据线性代数，很容易想出来。 # include &quot;iostream&quot; using namespace std; int main() { int n,x=0,y=0; cin&gt;&gt;n; int a[3][3]; cout&lt;&lt;endl; while(n--) { for(int i=0;i&lt;3;i++) { for(int j=0;j&lt;3;j++) cin&gt;&gt;a[i][j]; } for(int i=0;i&lt;3;i++) { cout&lt;&lt;endl; for(int j=0;j&lt;3;j++) { cout&lt;&lt;a[j][i]&lt;&lt;&apos; &apos;; } } } return 0; } Mark Jones]]></content>
+      <categories>
+        <category>ACM试题</category>
+      </categories>
+      <tags>
+        <tag>Dairy ACM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Sunflower]]></title>
     <url>%2F2018%2F11%2F23%2Fsunflower.html%2F</url>
     <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":true,"video":{"url":"https://markjones-1256731823.cos.ap-shanghai.myqcloud.com/video/sunflower.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() https://vodkgeyttp8c.vod.126.net/vodkgeyttp8/RDiJslEb_28344834_shd.mp4?wsSecret=2dd4f37982dc46002ca8f0a39401f66a&amp;wsTime=1542976331 Mar Jones]]></content>
